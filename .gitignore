@@ -1,0 +1,9 @@
+# ./gitignore
+
+# virtual environment
+/venv
+/.idea
+
+# dataset
+/MNIST
+*.npz
