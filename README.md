@@ -14,7 +14,7 @@ It demonstrates:
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Examples](#examples)
-7. [Contributing](#contributing)
+6. [Contributing](#contributing)
 
 ## Project Structure
 <details>
@@ -56,7 +56,7 @@ It demonstrates:
 ## Installation
 1. **Clone the repository:**
     ```bash
-    git clone 
+    git clone https://github.com/hub-mm/MNIST_handwritten_digit_recognition.git
     ```
 
 2. **Create Virtual Environment:**
@@ -132,6 +132,7 @@ It demonstrates:
 
 5. Open a pull request describing what changed and why
 
-###
+
+#
 
 **Thank you for taking the time to check this work out!**
