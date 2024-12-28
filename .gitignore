@@ -4,6 +4,10 @@
 /venv
 /.idea
 
-# dataset
+# dataset and models
 /MNIST
 *.npz
+*.keras
+
+# python autofiles
+__pycache__
