@@ -1,8 +1,7 @@
 # ./gitignore
 
 # virtual environment
-/venv
-/.idea
+/venv_mnist
 
 # dataset and models
 /MNIST
@@ -11,3 +10,5 @@
 
 # python autofiles
 __pycache__
+/.idea
+.python-version
