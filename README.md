@@ -131,7 +131,8 @@ It demonstrates:
 
     ### Limitations
     - Can only guarantee accuracy for **MNIST** type of images.
-    - Only works with single numbers.
+    - Only works with **single** numbers.
+    - Work best with **black background** and **white number**. 
 
     ### Process 
     **Run main scripts again after training with default parameters:**
