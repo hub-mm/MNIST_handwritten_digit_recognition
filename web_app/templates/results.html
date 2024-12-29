@@ -1,0 +1,17 @@
+<!-- ./web_app/templates/results.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+<body>
+    <h1>Predicted Digit: {{label}}</h1>
+    <p>You uploaded: {{filename}}</p>
+    <img src="{{url_for('static', filename=filename)}}" alt="Uploaded Image"/>
+    <br/><br/>
+    <a href="{{url_for('index')}}">Go Back</a>
+</body>
+</html>

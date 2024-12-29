@@ -1,0 +1,17 @@
+<!-- ./web_app/templates/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Number Predictor</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+</head>
+<body>
+    <h1>Upload a Handwritten Digit</h1>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*"/>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
