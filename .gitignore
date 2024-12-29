@@ -15,3 +15,5 @@ __pycache__
 
 # images
 *.png
+*.jpg
+*.jpeg
