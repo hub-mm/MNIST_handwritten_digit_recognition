@@ -14,7 +14,8 @@ It demonstrates:
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Examples](#examples)
-6. [Contributing](#contributing)
+6. [Web App](#web-app)
+7. [Contributing](#contributing)
 
 ## Project Structure
 <details>
@@ -22,23 +23,32 @@ It demonstrates:
 
 ```bash
     .
-    ├── README.md
-    ├── data
-    │   └── MNIST
-    │       └── mnist.npz
-    ├── main.py
-    ├── models
-    │   ├── __init__.py
-    │   ├── create_model.py
-    │   └── saved_models
-    │       ├── __init__.py
-    │       └── mnist_model.keras
-    ├── requirements.txt
-    └── scripts
-        ├── download_data.py
-        ├── evaluate.py
-        ├── train.py
-        └── visualise.py
+├── README.md
+├── data
+│   └── MNIST
+│       └── mnist.npz
+├── main.py
+├── models
+│   ├── __init__.py
+│   ├── create_model.py
+│   └── saved_models
+│       ├── __init__.py
+│       └── mnist_model.keras
+├── requirements.txt
+├── scripts
+│   ├── download_data.py
+│   ├── evaluate.py
+│   ├── train.py
+│   └── visualise.py
+└── web_app
+    ├── app.py
+    ├── static
+    │   └── styles
+    │       └── style.css
+    └── templates
+        ├── index.html
+        └── results.html
+
 ```
 
 </details>
@@ -112,6 +122,24 @@ It demonstrates:
 3. Evaluate on the test set (10k images)
 4. Save the model the ./models/saved_models/mnist_model.keras
 5. Reload the model, compile it, predict the first test image, and display the predicted label vs. the true label
+
+## Web App
+#### After training the model, there is the option to test out some images on a web page.
+- **Simple Web Page:** contains a landing page and result page.
+- **Ability to upload Images:** png, jpg, jpeg, etc. (gets converted to png).
+- **Output:** prediction made by the trained model of what number the image is showing.
+
+    ### Limitations
+    - Can only guarantee accuracy for **MNIST** type of images.
+    - Only works with single numbers.
+
+    ### Process 
+    **Run main scripts again after training with default parameters:**
+    ```bash
+    python main.py
+    ```
+    ***Click on link in terminal or access via: [http://127.0.0.1:5000](http://127.0.0.1:5000) if default parameters are kept.***
+
 
 ## Contributing
 1. Fork the repository
